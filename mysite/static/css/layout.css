@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* -*-css-*- Time-stamp: <layout.css - root> */
+/* copyright (c) konstantin.co.uk. all rights reserved. */
+
+* { margin: 0; }
+html, body { height: 100%; }
+#footer, .push { height: 100px; }
+#main
+{
+    height: auto !important;
+    margin: 0 auto -100px; /* bottom margin is negative value of #footer height */
+    min-height: 100%;
+}

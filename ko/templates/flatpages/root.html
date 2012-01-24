@@ -1,0 +1,4 @@
+{% extends 'page.html' %}{% comment %} -*- mode:sgml; coding:utf-8; -*- Time-stamp: <root.html - root> {% endcomment %}
+{% load customtags %}
+{% block title %}{% if block.super %}{{ block.super }} : {% endif %}{{ flatpage.title }}{% endblock %}
+{% block content %}{% evaluate flatpage.content %}{% endblock %}

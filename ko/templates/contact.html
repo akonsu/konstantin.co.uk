@@ -1,0 +1,29 @@
+{% extends 'page.html' %}{% comment %} -*- mode:sgml; coding:utf-8; -*- Time-stamp: <contact.html - root> {% endcomment %}
+
+{% block title %}{% if block.super %}{{ block.super }} : {% endif %}contact{% endblock %}
+{% block extra-nav %}<li class="left"><a href="/">Home</a></li>{% endblock %}
+{% block caption %}<div class="caption">Contact</div>{% endblock %}
+
+{% block content %}
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>
+      Please send me an e-mail by filling in the fields below. Please
+      be sure to fill in the fields as accurately as possible as this
+      will help me respond to your enquiry or request
+      appropriately. Thank you.
+    </p>
+    <form method="post" action="{% url contact %}">
+      <fieldset>
+        {% csrf_token %}
+        <ul>{{ form.as_ul }}</ul>
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+  {% endif %}
+{% endblock %}

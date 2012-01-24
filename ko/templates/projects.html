@@ -1,0 +1,21 @@
+{% extends 'page.html' %}{% comment %} -*- mode:sgml; coding:utf-8; -*- Time-stamp: <projects.html - root> {% endcomment %}
+
+{% load markup %}
+
+{% block title %}{% if block.super %}{{ block.super }} : {% endif %}projects{% endblock %}
+{% block extra-nav %}<li class="left"><a href="/">Home</a></li>{% endblock %}
+{% block caption %}<div class="caption">Projects</div>{% endblock %}
+
+{% block content %}
+  {% if projects %}
+    <ul class="projects">
+      {% for p in projects %}
+        <li>
+          <div class="description">{{ p.description|markdown }}</div>
+          <img class="screenshot" src="{{ p.screenshot }}" />
+          <div class="clear"></div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}

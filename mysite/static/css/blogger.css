@@ -1,0 +1,28 @@
+/* -*-css-*- Time-stamp: <blogger.css - root> */
+/* copyright (c) konstantin.co.uk. all rights reserved. */
+
+.blog-pager { border-top: 1px solid #999; }
+.blog-pager a
+{
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.footer-outer { border: 0; }
+.main-inner { padding: 35px 0; }
+.post-body
+{
+    font-size: 100%;
+    line-height: 1em;
+}
+.tabs-inner .widget li a, .tabs-inner .widget li.selected a
+{
+    padding: 0.2em 1em;
+    text-transform: uppercase;
+}
+.tabs-inner { padding: 0; }
+.tabs-outer { border-bottom: 1px solid #999; }
+.widget ul { line-height: 1em; }
+h3.post-title { text-align: center; }
+div.Attribution { font-size: 14px; }
+div.header-inner img { margin: 10px auto; }
+span.post-backlinks, span.post-timestamp { display: none; }

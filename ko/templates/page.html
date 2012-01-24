@@ -1,0 +1,15 @@
+{% extends 'base.html' %}{% comment %} -*- mode:sgml; coding:utf-8; -*- Time-stamp: <page.html - root> {% endcomment %}
+{% block nav %}
+  <nav style="background-image:url('{{ STATIC_URL }}images/header.jpg');">
+    <div class="container">
+      <ul>
+        <li><a href="/about">About Me</a></li>
+        <li class="separator"></li>
+        <li><a href="{% url contact %}">Contact Me</a></li>
+        <li class="separator"></li>
+        <li><a href="{% url projects %}">Projects</a></li>
+        {% block extra-nav %}{% endblock %}
+      </ul>
+    </div>
+  </nav>
+{% endblock %}

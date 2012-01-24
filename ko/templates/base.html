@@ -1,0 +1,47 @@
+{% spaceless %}{% comment %} -*- mode:sgml; coding:utf-8; -*- Time-stamp: <base.html - root> {% endcomment %}
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link href="http://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" />
+      <meta charset="utf-8" />
+      <meta name="ROBOTS" content="ALL" />
+      <meta name="Copyright" content="copyright konstantin.co.uk" />
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>{% block title %}konstantin{% endblock %}</title>
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css" />
+      <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" />
+      <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.png" sizes="32x32" type="image/png" />
+      <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-9811055-1']);
+        _gaq.push(['_setDomainName', 'konstantin.co.uk']);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_trackPageview']);
+
+        (function(){
+            var ga = document.createElement('script');
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            ga.type = 'text/javascript';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    </head>
+    <body>
+      <div id="main">
+        {% block nav %}{% endblock %}
+        <div id="content">
+          {% block caption %}{% endblock %}
+          {% block content %}{% endblock %}
+          <div class="clear"></div>
+        </div>
+        <div class="push"></div>
+      </div>
+      <div id="footer">Copyright &copy; konstantin.co.uk. All rights reserved.</div>
+    </body>
+  </html>
+{% endspaceless %}

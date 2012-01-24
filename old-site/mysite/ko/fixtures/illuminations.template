@@ -1,0 +1,10 @@
+<!-- -*-html-*- Time-stamp: <illuminations.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('illumination151120070','2007-11-15','illuminations',[thumbnail('illumination151120070.jpg'),'illumination151120070.jpg'],[]) -->
+<!-- plate ('illumination151120071','2007-11-15','illuminations',[thumbnail('illumination151120071.jpg'),'illumination151120071.jpg'],[]) -->
+<!-- plate ('illumination281220070','2007-12-28','illuminations',[thumbnail('illumination281220070.jpg'),'illumination281220070.jpg'],[]) -->
+<!-- plate ('illumination281220071','2007-12-28','illuminations',[thumbnail('illumination281220071.jpg'),'illumination281220071.jpg'],[]) -->
+{% with self.content_parts.0 as p %}
+  <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+{% endwith %}

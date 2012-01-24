@@ -1,0 +1,272 @@
+﻿<!-- -*-mode:html; coding:utf-8;-*- Time-stamp: <blog08.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('blog081231','2008-12-31','',[],['1208']) -->
+figure with bouquet II. painted from imagination. apparently.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog081216','2008-12-16','',[],['unfocused081216']) -->
+figure with bouquet. this is a digitally modified drawing. i did it
+with a green pen in my sketchbook, then photographed it and colored it
+using software.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog081215','2008-12-15','',[],['unfocused081213','unfocused081215']) -->
+two recent doodles. from left to right: "bear" and "convex subspace closure of
+the point shadow of an apartment of a spherical building".
+<br /><br />
+<div>
+  {% for p in self.plates.all %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endfor %}
+</div>
+
+<!-- plate ('blog081030','2008-10-30','',[],['1008']) -->
+flowers on a kitchen table.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog080915','2008-09-15','',[],['unfocused080816']) -->
+first grade.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog0807280','2008-07-28','',[],['unfocused080717','unfocused080719']) -->
+i call these (from left to right) "labourer" and "stolen sun".
+<br /><br />
+<div>
+  {% for p in self.plates.all %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endfor %}
+</div>
+
+<!-- plate ('blog0807281','2008-07-28','',[],['0807140','0807141','komposition080714']) -->
+more photos.
+<br /><br />
+<div>
+  {% for p in self.plates.all %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_thumbnail as t %}
+        <img alt="{{p.name}}" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" />
+      {% endwith %}
+    </a>
+  {% endfor %}
+</div>
+
+<!-- plate ('blog080705','2008-07-05','',[],['07080']) -->
+thank you, comrade stalin! a quick sketch from imagination.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog0807010','2008-07-01','',[],['06081']) -->
+instant messaging. painted from imagination.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog0807011','2008-07-01','',[],['080416','080509','080510','080521','080526','080528','080606','080615','0805250','0805251','0806290','0806291','0806292','0806293']) -->
+more photos.
+<br /><br />
+<div>
+  {% for p in self.plates.all %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_thumbnail as t %}
+        <img alt="{{p.name}}" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" />
+      {% endwith %}
+    </a>
+  {% endfor %}
+</div>
+
+<!-- plate ('blog080606','2008-06-06','',[],['06080']) -->
+a bather. painted from imagination.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog0806020','2008-06-02','',[],['04080','04081','05080']) -->
+sketches done in acrylic.
+<br /><br />
+<div>
+  {% for p in self.plates.all %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endfor %}
+</div>
+
+<!-- plate ('blog0806021','2008-06-02','',[],['05081']) -->
+Ivan and Danilo.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog08032008','2008-03-08','',[],['geranium08032008']) -->
+i decided i would paint a still life. in oil of course. and on canvas
+no less. a lot of people do it, and i am no better. i do have a
+geranium on my window, which, many might think, is a very mundane
+subject to paint, especially if it is placed against a uniform light
+background. i am going to try at least, and if i ever make it, we will
+see what comes out. bear with me, dear reader.
+<p />
+and one more thing, i could not resist putting up a quote from a song
+by Vladimir Vysotsky
+(see <a href="http://en.wikipedia.org/wiki/Vladimir_Vysotsky" target="_blank">wikipedia.org</a>).
+for those who can read russian.
+
+<div style="padding-top:25px;">
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top">
+        {% with self.plates.all.0 as p %}
+          <a href="{% url ko.views.view_plate p.name %}">
+            {% with p.get_display as d %}
+              <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+            {% endwith %}
+          </a>
+        {% endwith %}
+      </td>
+      <td class="nobr" style="padding-left:25px;" valign="top">
+        У нее, у нее на окошке герань,<br />
+        У нее, у нее занавески в разводах.<br />
+        А у меня, у меня на окне ни хера,<br />
+        Только пыль, только старая пыль на комодах.
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- plate ('blog09032008','2008-03-09','',[],['geranium09032008']) -->
+i am still enthusiastic about it! i even have made a sketch! this is unstretched canvas. primed.
+<div style="padding-top:25px;">
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog15032008','2008-03-15','',[],['geranium15032008']) -->
+first touches of paint. this is all wrong. zoomed in too much.
+<div style="padding-top:25px;">
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog20032008','2008-03-20','',[],['geranium20032008']) -->
+i do not know what i am doing here...
+<div style="padding-top:25px;">
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog24032008','2008-03-24','',[],['geranium24032008']) -->
+this is beginning to clear up me thinks. the lower right corner is
+promising. it might be a geranium after all. i do not know.
+<div style="padding-top:25px;">
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog28032008','2008-03-28','',[],['geranium28032008']) -->
+i got rid of the formation in the middle. at least partially. it made
+the geranium appear unwelcome. the overall color scheme is starting to
+define. am i on to something?
+<div style="padding-top:25px;">
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>

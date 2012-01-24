@@ -1,0 +1,12 @@
+{% comment %} -*-html-*- Time-stamp: <paginator.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+
+{% if not single_page %}
+  <span class="pages">
+    {% if page_obj.has_previous %}<a href="?page={{page_obj.previous_page_number}}">&lt;</a>{% endif %}
+    {% for p in digg_page_range %}
+      {% if not p %}...{% else %}{% ifequal p page_obj.number %}<span>{{p}}</span>{% else %}<a href="?page={{p}}">{{p}}</a>{% endifequal %}{% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %}<a href="?page={{page_obj.next_page_number}}">&gt;</a>{% endif %}
+  </span>
+{% endif %}

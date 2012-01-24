@@ -1,0 +1,435 @@
+<!-- -*-html-*- Time-stamp: <paintings.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('090818','2009-08-18','paintings',[display('090818.jpg'),thumbnail('090818.jpg'),'090818.jpg'],[]) -->
+<!-- plate ('090810','2009-08-10','paintings',[display('090810.jpg'),thumbnail('090810.jpg'),'090810.jpg'],[]) -->
+<!-- plate ('090805','2009-08-05','paintings',[display('090805.jpg'),thumbnail('090805.jpg'),'090805.jpg'],[]) -->
+<templates>
+  <default>
+    <![CDATA[
+    <div>
+      <div style="float:left;">
+        {% with self.content_parts.0 as p %}
+          <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+        {% endwith %}
+      </div>
+      <div class="nobr" style="float:left;padding-left:50px;">
+        <div class="plate-title">{{self.name}}</div>
+        <div>{{self.date}}</div>
+        <div>acrylic on paper</div>
+        <div>30.5 x 30.5 cm</div>
+      </div>
+      <div style="clear:both;" />
+    </div>
+    ]]>
+  </default>
+</templates>
+
+<!-- plate ('0809','2009-08-01','paintings',[display('0809.jpg'),thumbnail('0809.jpg'),'0809.jpg'],[]) -->
+<templates>
+  <default>
+    <![CDATA[
+    <div>
+      <div style="float:left;">
+        {% with self.content_parts.0 as p %}
+          <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+        {% endwith %}
+      </div>
+      <div class="nobr" style="float:left;padding-left:50px;">
+        <div class="plate-title">{{self.name}}</div>
+        <div>{{self.date}}</div>
+        <div>acrylic and pasted newspaper on board</div>
+        <div>61 x 81.2 cm</div>
+      </div>
+      <div style="clear:both;" />
+    </div>
+    ]]>
+  </default>
+</templates>
+
+<!-- plate ('collective-farmers-090512','2009-05-12','',[display('collective-farmers-090512.jpg'),thumbnail('collective-farmers-090512.jpg'),'collective-farmers-090512.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on linen</div>
+      <div>76.2 x 61 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('0409','2009-04-01','paintings',[display('0409.jpg'),thumbnail('0409.jpg'),'0409.jpg'],['lady-with-little-dog-090324']) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas board</div>
+      <div>46 x 61 cm</div>
+      {% if self.plates.all %}
+        <div style="margin:25px 0 0 25px;">
+          a progress snapshot:<p />
+          {% with self.plates.all.0 as p %}
+            {% with p.get_thumbnail as t %}
+              <a href="{% url ko.views.view_plate p.name %}">
+                <img alt="" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" /></a>
+            {% endwith %}
+          {% endwith %}
+        </div>
+      {% endif %}
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('gamayun','2009-03-01','paintings',[display('gamayun.jpg'),thumbnail('gamayun.jpg'),'gamayun.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas</div>
+      <div>61 x 76.2 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('0109','2009-01-01','paintings',[display('0109.jpg'),thumbnail('0109.jpg'),'0109.jpg'],['0109-081203']) -->
+<!-- plate ('0109-081203','2008-12-03','',[thumbnail('0109-081203.jpg'),'0109-081203.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on paper mounted on board</div>
+      <div>61 x 81.3 cm</div>
+      {% if self.plates.all %}
+        <div style="margin:25px 0 0 25px;">
+          a progress snapshot:<p />
+          {% with self.plates.all.0 as p %}
+            {% with p.get_thumbnail as t %}
+              <a href="{% url ko.views.view_plate p.name %}">
+                <img alt="" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" /></a>
+            {% endwith %}
+          {% endwith %}
+        </div>
+      {% endif %}
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('lady-with-little-dog-090324','2009-03-24','',[display('lady-with-little-dog-090324.jpg'),thumbnail('lady-with-little-dog-090324.jpg'),'lady-with-little-dog-090324.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas board</div>
+      <div>46 x 61 cm</div>
+      <div style="margin:25px 0 0 25px;">photo courtesy of Slava Fedorchuk</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('1208','2008-12-01','paintings',[display('1208.jpg'),thumbnail('1208.jpg'),'1208.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>acrylic on canvas board</div>
+      <div>30.5 x 40.6 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('1108','2008-11-01','paintings',[display('1108.jpg'),thumbnail('1108.jpg'),'1108.jpg'],['1108-080919']) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas board</div>
+      <div>40.6 x 50.8 cm</div>
+      <div style="margin:25px 0 0 25px;">
+        a progress snapshot:<p />
+        {% with self.plates.all.0 as p %}
+          {% with p.get_thumbnail as t %}
+            <a href="{% url ko.views.view_plate p.name %}">
+              <img alt="" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" /></a>
+          {% endwith %}
+        {% endwith %}
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('1108-080919','2008-09-19','',[thumbnail('1108-080919.jpg'),'1108-080919.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>acrylic underpainting</div>
+      <div>40.6 x 50.8 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('0208','2008-02-01','paintings',[thumbnail('0208.jpg'),'0208.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on paper</div>
+      <div>45.7 x 61 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('04080','2008-04-01','paintings',[display('04080.jpg'),thumbnail('04080.jpg'),'04080.jpg'],[]) -->
+<!-- plate ('04081','2008-04-15','paintings',[display('04081.jpg'),thumbnail('04081.jpg'),'04081.jpg'],[]) -->
+<!-- plate ('05080','2008-05-01','paintings',[display('05080.jpg'),thumbnail('05080.jpg'),'05080.jpg'],[]) -->
+<!-- plate ('05081','2008-05-15','paintings',[display('05081.jpg'),thumbnail('05081.jpg'),'05081.jpg'],[]) -->
+<!-- plate ('06080','2008-06-01','paintings',[display('06080.jpg'),thumbnail('06080.jpg'),'06080.jpg'],[]) -->
+<!-- plate ('06081','2008-06-15','paintings',[display('06081.jpg'),thumbnail('06081.jpg'),'06081.jpg'],[]) -->
+<!-- plate ('07080','2008-07-01','paintings',[display('07080.jpg'),thumbnail('07080.jpg'),'07080.jpg'],[]) -->
+<!-- plate ('1008','2008-10-01','paintings',[display('1008.jpg'),thumbnail('1008.jpg'),'1008.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>acrylic on paper</div>
+      <div>14 x 21.6 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('06mar2007','2007-03-06','paintings',[thumbnail('06mar2007.jpg'),'06mar2007.jpg'],['06mar2007-detail']) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>watercolor on paper</div>
+      <div>45.7 x 61 cm</div>
+      <div align="center" style="margin:25px 0 0 25px;">
+        {% with self.plates.all.0 as p %}
+          <a href="{% url ko.views.view_plate p.name %}">
+            {% with p.get_thumbnail as t %}
+              <img alt="" src="{{t.content.url}}" style="display:block;" width="{{t.width}}px" height="{{t.height}}px" />
+            {% endwith %}
+            <span class="nobr">{{p.name}}</span>
+          </a>
+        {% endwith %}
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('06mar2007-detail','2007-03-06','',[thumbnail('06mar2007-detail.jpg'),'06mar2007-detail.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>watercolor on paper</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('08may2006','2006-05-08','paintings',[thumbnail('08may2006.jpg'),'08may2006.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>watercolor on paper</div>
+      <div>45.7 x 61 cm</div>
+      <div style="margin:25px 0 0 25px;">portrait of Laura Vasyutynskaya (<a href="http://www.lauravdesign.com/" target="_blank">http://www.lauravdesign.com</a>)</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('10apr2006','2006-04-10','paintings',[thumbnail('10apr2006.jpg'),'10apr2006.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>watercolor on paper</div>
+      <div>45.7 x 61 cm</div>
+      <div style="margin:25px 0 0 25px;">painted from life</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('aug2007','2007-08-01','paintings',[thumbnail('aug2007.jpg'),'aug2007.jpg'],[]) -->
+<!-- plate ('construction-worker','2007-04-01','paintings',[thumbnail('construction-worker.jpg'),'construction-worker.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>watercolor on paper</div>
+      <div>45.7 x 61 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('dying-slave','2007-12-01','paintings',[thumbnail('dying-slave.jpg'),'dying-slave.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on paper</div>
+      <div>69 x 93 cm</div>
+      <div style="margin:25px 0 0 25px;">painted from life</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('jun2006','2006-06-01','paintings',[thumbnail('jun2006.jpg'),'jun2006.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>watercolor on paper</div>
+      <div>45.7 x 61 cm</div>
+      <div style="margin:25px 0 0 25px;">painted from life</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('tea-drinker','2007-08-01','paintings',[thumbnail('tea-drinker.jpg'),'tea-drinker.jpg'],['tea-drinker-25may2007','tea-drinker-13jun2007','tea-drinker-28jun2007']) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas</div>
+      <div>40.6 x 50.8 cm</div>
+      <table cellpadding="0" cellspacing="0" style="margin:25px 0 0 25px;">
+        <tr><td class="nobr">progress</td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td class="nobr">
+            {% for p in self.plates.all %}
+              {% with p.get_thumbnail as t %}
+                <a href="{% url ko.views.view_plate p.name %}">
+                  <img alt="" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" /></a>
+              {% endwith %}
+            {% endfor %}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('tea-drinker-25may2007','2007-05-25','',[thumbnail('tea-drinker-25may2007.jpg'),'tea-drinker-25may2007.jpg'],[]) -->
+<!-- plate ('tea-drinker-13jun2007','2007-06-13','',[thumbnail('tea-drinker-13jun2007.jpg'),'tea-drinker-13jun2007.jpg'],[]) -->
+<!-- plate ('tea-drinker-28jun2007','2007-06-28','',[thumbnail('tea-drinker-28jun2007.jpg'),'tea-drinker-28jun2007.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>oil on canvas</div>
+      <div>40.6 x 50.8 cm</div>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,194 @@
+<!-- -*-html-*- Time-stamp: <blog09.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('blog090822','2009-08-22','',[],['090818','090810']) -->
+<templates>
+  <default>
+    <![CDATA[
+    090818 and 090810.
+    <br /><br />
+    <div>
+      {% for p in self.plates.all %}
+        <a href="{% url ko.views.view_plate p.name %}">
+          {% with p.get_display as d %}
+            <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+          {% endwith %}
+        </a>
+      {% endfor %}
+    </div>
+    ]]>
+  </default>
+  <summary>
+    <![CDATA[
+    090818 and 090810.
+    <br /><br />
+    <div>
+      {% for p in self.plates.all %}
+        <a href="{% url ko.views.view_plate p.name %}">
+          {% with p.get_thumbnail as t %}
+            <img alt="{{p.name}}" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" />
+          {% endwith %}
+        </a>
+      {% endfor %}
+    </div>
+    ]]>
+  </summary>
+</templates>
+
+<!-- plate ('blog090806','2009-08-06','',[],['0809','090805']) -->
+<templates>
+  <default>
+    <![CDATA[
+    two recent acrylics.
+    <br /><br />
+    <div>
+      {% for p in self.plates.all %}
+        <a href="{% url ko.views.view_plate p.name %}">
+          {% with p.get_display as d %}
+            <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+          {% endwith %}
+        </a>
+      {% endfor %}
+    </div>
+    ]]>
+  </default>
+  <summary>
+    <![CDATA[
+    two recent acrylics.
+    <br /><br />
+    <div>
+      {% for p in self.plates.all %}
+        {% with p.get_thumbnail as t %}
+          <a href="{% url ko.views.view_plate p.name %}">
+            <img alt="{{p.name}}" src="{{t.content.url}}" style="border-width:0px;" width="{{t.width}}px" height="{{t.height}}px" /></a>
+        {% endwith %}
+      {% endfor %}
+    </div>
+    ]]>
+  </summary>
+</templates>
+
+<!-- plate ('blog090714','2009-07-14','',[],['100watercolors130709']) -->
+<!-- plate ('blog090629','2009-06-29','',[],['100watercolors290609']) -->
+<templates>
+  <default><![CDATA[{% with self.plates.all.0 as p %}{% plate p, template = blog %}{% endwith %}]]></default>
+  <summary><![CDATA[{% with self.plates.all.0 as p %}{% plate p, template = summary %}{% endwith %}]]></summary>
+</templates>
+
+<!-- plate ('blog090516','2009-05-16','',[],['collective-farmers-090512']) -->
+<templates>
+  <default>
+    <![CDATA[
+    work in progress. collective farmers are coming to rescue a woman tangled in the branches of a tree.
+    <br /><br />
+    <div>
+      {% with self.plates.all.0 as p %}
+        {% with p.get_display as d %}
+          <a href="{% url ko.views.view_plate p.name %}">
+            <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" /></a>
+        {% endwith %}
+      {% endwith %}
+    </div>
+    ]]>
+  </default>
+  <summary>
+    <![CDATA[
+    work in progress. collective farmers are coming to rescue a woman tangled in the branches of a tree.
+    <br /><br />
+    <div>
+      {% with self.plates.all.0 as p %}
+        {% with p.get_thumbnail as t %}
+          <a href="{% url ko.views.view_plate p.name %}">
+            <img alt="{{p.name}}" src="{{t.content.url}}" width="{{t.width}}px" height="{{t.height}}px" /></a>
+        {% endwith %}
+      {% endwith %}
+    </div>
+    ]]>
+  </summary>
+</templates>
+
+<!-- plate ('blog090427','2009-04-27','',[],['0409']) -->
+i call it finished.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog090412','2009-04-12','',[],['gamayun']) -->
+gamayun.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog090327','2009-03-27','',[],['0109']) -->
+three faces.
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog090326','2009-03-26','',[],['lady-with-little-dog-090324']) -->
+work in progress. after Chekhov's story "The Lady with the Little Dog".
+<br /><br />
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog090323','2009-03-23','',[],['masha-and-the-bear','1108']) -->
+two old works. from left to right: "untitled" and "masha and the bear".
+<br /><br />
+<div>
+  {% for p in self.plates.all %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endfor %}
+</div>
+
+<!-- plate ('blog090329','2009-03-29','',[],['unfocused0209']) -->
+<!-- plate ('blog090308','2009-03-08','',[],['unfocused090308']) -->
+<div>
+  {% with self.plates.all.0 as p %}
+    <a href="{% url ko.views.view_plate p.name %}">
+      {% with p.get_display as d %}
+        <img alt="{{p.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" />
+      {% endwith %}
+    </a>
+  {% endwith %}
+</div>
+
+<!-- plate ('blog090217','2009-02-17','',['0902_studio.jpg'],[]) -->
+works in progress.
+<br /><br />
+<div>
+  {% with self.content_parts.0 as p %}
+    <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+  {% endwith %}
+</div>

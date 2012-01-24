@@ -1,0 +1,249 @@
+<!-- -*-html-*- Time-stamp: <plates.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('geranium08032008','2008-03-08','',[display('geranium08032008.jpg'),'geranium08032008.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('geranium09032008','2008-03-09','',[display('geranium09032008.jpg'),'geranium09032008.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>charcoal on canvas</div>
+      <div>40.6 x 50.8 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('geranium15032008','2008-03-15','',[display('geranium15032008.jpg'),'geranium15032008.jpg'],[]) -->
+<!-- plate ('geranium20032008','2008-03-20','',[display('geranium20032008.jpg'),'geranium20032008.jpg'],[]) -->
+<!-- plate ('geranium24032008','2008-03-24','',[display('geranium24032008.jpg'),'geranium24032008.jpg'],[]) -->
+<!-- plate ('geranium28032008','2008-03-28','',[display('geranium28032008.jpg'),'geranium28032008.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas</div>
+      <div>40.6 x 50.8 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('daemon-alcohol','2008-01-01','flash',[thumbnail('daemon-alcohol.jpg'),'daemon-alcohol.jpg','micda.mp3','player.swf'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_dict.daemon_alcohol_jpg as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>painting with sound</div>
+      <p />
+      <div>acrylic and ink on paper</div>
+      <div>27.9 x 35.6 cm</div>
+      <p />
+      <div>
+        song "Mama I Cannot Drink Anymore" <a href="http://www.aquarium.ru/discography/brodyaga.html#@05" target="_blank">&gt;&gt;</a><br />
+        written by Boris Grebenshchikov and performed by Aquarium<br />
+        (c) 2006 BG<br />
+        published with the permission of the author
+      </div>
+      <p />
+      <div style="background-color:#b5edbc;padding:5px;">
+        <div>right button plays sound</div>
+        <div>left button stops playback</div>
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+                id="{{self.name}}"
+                width="100px" height="40px">
+          <param name="bgcolor" value="#b5edbc" />
+          <param name="flashvars" value="url={{self.content_dict.micda_mp3.content.url}}" />
+          <param name="movie" value="{{self.content_dict.player_swf.content.url}}" />
+          <param name="quality" value="high" />
+          <embed bgcolor="#b5edbc"
+                 flashvars="url={{self.content_dict.micda_mp3.content.url}}"
+                 name="{{self.name}}"
+                 pluginspage="http://www.macromedia.com/go/getflashplayer"
+                 quality="high"
+                 src="{{self.content_dict.player_swf.content.url}}"
+                 type="application/x-shockwave-flash"
+                 width="100px" height="40px" />
+        </object>
+        <div align="right"><a href="http://code.konstantin.co.uk/client/player/">(code)</a></div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('fadeaway','2007-03-22','flash',[thumbnail('trees.jpg'),'fadeaway.swf','trees.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">
+      {% with self.content_dict.trees_jpg as p %}
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+                id="{{self.name}}"
+                width="{{p.width}}px" height="{{p.height}}px">
+          <param name="bgcolor" value="#ffffff" />
+          <param name="flashvars" value="c=0xcc9966&url={{p.content.url}}" />
+          <param name="movie" value="{{self.content_dict.fadeaway_swf.content.url}}" />
+          <param name="quality" value="high" />
+          <embed bgcolor="#ffffff"
+                 flashvars="c=0xcc9966&url={{p.content.url}}"
+                 name="{{self.name}}"
+                 pluginspage="http://www.macromedia.com/go/getflashplayer"
+                 quality="high"
+                 src="{{self.content_dict.fadeaway_swf.content.url}}"
+                 type="application/x-shockwave-flash"
+                 width="{{p.width}}px" height="{{p.height}}px" />
+        </object>
+      {% endwith %}
+    </td>
+    <td valign="top" style="padding-left:50px;">
+      <div class="plate-title">{{self.name}}</div>
+      <div>feb 2007</div>
+      <div class="nobr">actionscript 3.0 (<a href="http://code.konstantin.co.uk/client/fadeaway/">code</a>)</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('le-samourai','2007-03-22','etching',[thumbnail('le-samourai.jpg'),'le-samourai.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>dec 2006</div>
+      <div>etching</div>
+      <div>15 x 23 cm</div>
+      <div style="margin:25px 0 0 25px;">
+        merit award<br />
+        2007 student art exhibit<br />
+        lansing community college<br />
+        lansing mi usa (<a alt="" target="_blank" href="http://www.lcc.edu">lcc.edu</a>)
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('metro','2007-03-22','flash',[thumbnail('metro.jpg'),'barselona_metro.mp3','kiev_metro.mp3','metro.swf'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+              codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+              id="{{self.name}}"
+              width="519px" height="658px">
+        <param name="bgcolor" value="#ffffff" />
+        <param name="flashvars" value="urls={{self.content_dict.barselona_metro_mp3.content.url}}|{{self.content_dict.kiev_metro_mp3.content.url}}" />
+        <param name="movie" value="{{self.content_dict.metro_swf.content.url}}" />
+        <param name="quality" value="high" />
+        <embed bgcolor="#ffffff"
+               flashvars="urls={{self.content_dict.barselona_metro_mp3.content.url}}|{{self.content_dict.kiev_metro_mp3.content.url}}"
+               name="{{self.name}}"
+               pluginspage="http://www.macromedia.com/go/getflashplayer"
+               quality="high"
+               src="{{self.content_dict.metro_swf.content.url}}"
+               type="application/x-shockwave-flash"
+               width="519px" height="658px" />
+      </object>
+    </td>
+    <td valign="top" style="padding-left:50px;">
+      <div class="plate-title">{{self.name}}</div>
+      <div>may 2007</div>
+      <div class="nobr">actionscript 3.0 (<a href="http://code.konstantin.co.uk/client/metro/">code</a>)</div>
+      <div style="margin:25px 0 0 25px;">
+        {{self.name}} uses sounds taken from <a alt="" target="_blank" href="http://freesound.iua.upf.edu">http://freesound.iua.upf.edu</a>:
+        <ul style="list-style-type:none;margin-left:0px;">
+          <li>
+            <a alt="" target="_blank" href="http://freesound.iua.upf.edu/samplesViewSingle.php?id=11688">07-kiev-metro.wav</a>
+            (by Bram)
+          </li>
+          <li>
+            <a alt="" target="_blank" href="http://freesound.iua.upf.edu/samplesViewSingle.php?id=369">ComeAndGo-metro-BCN.wav</a>
+            (by TwistedLemon)
+          </li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('the-farm','2007-03-22','flash',[thumbnail('the-farm.jpg'),'flvplayer.swf','the-farm.flv'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+              codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+              id="{{self.name}}"
+              width="290px" height="240px">
+        <param name="bgcolor" value="#ffffff" />
+        <param name="flashvars" value="file={{self.content_dict.the_farm_flv.content.url}}&showdigits=false&overstretch=false&showfsbutton=false&showicons=false&autostart=false&repeat=false" />
+        <param name="menu" value="false" />
+        <param name="movie" value="{{self.content_dict.flvplayer_swf.content.url}}" />
+        <param name="quality" value="high" />
+        <embed bgcolor="#ffffff"
+               flashvars="file={{self.content_dict.the_farm_flv.content.url}}&showdigits=false&overstretch=false&showfsbutton=false&showicons=false&autostart=false&repeat=false"
+               menu="false"
+               name="{{self.name}}"
+               pluginspage="http://www.macromedia.com/go/getflashplayer"
+               quality="high"
+               src="{{self.content_dict.flvplayer_swf.content.url}}"
+               type="application/x-shockwave-flash"
+               width="290px" height="240px" />
+      </object>
+    </td>
+    <td class="nobr" valign="top" style="padding-left:50px;">
+      <div class="plate-title">{{self.name}}</div>
+      <div>mar 2007</div>
+      <div style="margin:25px 0 0 25px;">
+        {{self.name}} uses sounds taken from <a alt="" target="_blank" href="http://freesound.iua.upf.edu">http://freesound.iua.upf.edu</a>:
+        <ul style="list-style-type:none;margin-left:0px;">
+          <li>
+            <a alt="" target="_blank" href="http://freesound.iua.upf.edu/samplesViewSingle.php?id=31964">03 - Resodance.mp3</a>
+            (by marvman)
+          </li>
+          <li>
+            <a alt="" target="_blank" href="http://freesound.iua.upf.edu/samplesViewSingle.php?id=18074">BerberFarmyard2.wav</a>
+            (by acclivity)
+          </li>
+          <li>
+            <a alt="" target="_blank" href="http://freesound.iua.upf.edu/samplesViewSingle.php?id=16568">TwoCows.wav</a>
+            (by acclivity)
+          </li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+</table>

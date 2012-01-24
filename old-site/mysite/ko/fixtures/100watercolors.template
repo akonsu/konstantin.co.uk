@@ -1,0 +1,96 @@
+<!-- -*-html-*- Time-stamp: <100watercolors.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('100watercolors130709','2009-07-13','',[display('100watercolors130709.jpg'),thumbnail('100watercolors130709.jpg'),'100watercolors130709.jpg'],[]) -->
+<templates>
+  <default>
+    <![CDATA[
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          {% with self.content_parts.0 as p %}
+            <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+          {% endwith %}
+        </td>
+        <td class="nobr" style="padding-left:50px;" valign="top">
+          <div class="plate-title">{{self.name}}</div>
+          <div>{{self.date}}</div>
+          <div>watercolor on paper</div>
+          <div>23 x 29.5 cm</div>
+        </td>
+      </tr>
+    </table>
+    ]]>
+  </default>
+  <blog>
+    <![CDATA[
+    another watercolor.
+    <br /><br />
+    <div>
+      {% with self.get_display as d %}
+        <a href="{% url ko.views.view_plate self.name %}">
+          <img alt="{{self.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" /></a>
+      {% endwith %}
+    </div>
+    ]]>
+  </blog>
+  <summary>
+    <![CDATA[
+    another watercolor.
+    <br /><br />
+    <div>
+      {% with self.get_thumbnail as t %}
+        <a href="{% url ko.views.view_plate self.name %}">
+          <img alt="{{self.name}}" src="{{t.content.url}}" style="border-width:0px;" width="{{t.width}}px" height="{{t.height}}px" /></a>
+      {% endwith %}
+    </div>
+    ]]>
+  </summary>
+</templates>
+
+<!-- plate ('100watercolors290609','2009-06-29','',[display('100watercolors290609.jpg'),thumbnail('100watercolors290609.jpg'),'100watercolors290609.jpg'],[]) -->
+<templates>
+  <default>
+    <![CDATA[
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          {% with self.content_parts.0 as p %}
+            <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+          {% endwith %}
+        </td>
+        <td class="nobr" style="padding-left:50px;" valign="top">
+          <div class="plate-title">{{self.name}}</div>
+          <div>{{self.date}}</div>
+          <div>watercolor and gouache on paper</div>
+          <div>23 x 29.5 cm</div>
+        </td>
+      </tr>
+    </table>
+    ]]>
+  </default>
+  <blog>
+    <![CDATA[
+    one hundred watercolors. the first one.
+    <br /><br />
+    <div>
+      {% with self.get_display as d %}
+        <a href="{% url ko.views.view_plate self.name %}">
+          <img alt="{{self.name}}" src="{{d.content.url}}" width="{{d.width}}px" height="{{d.height}}px" /></a>
+      {% endwith %}
+    </div>
+    ]]>
+  </blog>
+  <summary>
+    <![CDATA[
+    the first work in the series of one hundred watercolors.
+    <br /><br />
+    <div>
+      {% with self.get_thumbnail as t %}
+        <a href="{% url ko.views.view_plate self.name %}">
+          <img alt="{{self.name}}" src="{{t.content.url}}" style="border-width:0px;" width="{{t.width}}px" height="{{t.height}}px" /></a>
+      {% endwith %}
+    </div>
+    ]]>
+  </summary>
+</templates>

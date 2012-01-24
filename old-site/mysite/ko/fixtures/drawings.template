@@ -1,0 +1,118 @@
+<!-- -*-html-*- Time-stamp: <drawings.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('20nov2005','2005-11-20','drawings',[thumbnail('20nov2005.jpg'),'20nov2005.jpg'],[]) -->
+<!-- plate ('14nov2005','2005-11-14','drawings',[thumbnail('14nov2005.jpg'),'14nov2005.jpg'],[]) -->
+<!-- plate ('30oct2005','2005-10-30','drawings',[thumbnail('30oct2005.jpg'),'30oct2005.jpg'],[]) -->
+<!-- plate ('02oct2005','2005-10-02','drawings',[thumbnail('02oct2005.jpg'),'02oct2005.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pencil on paper</div>
+      <div style="margin:25px 0 0 25px;">drawn from life</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('dec2006','2006-12-01','drawings',[thumbnail('dec2006.jpg'),'dec2006.jpg'],[]) -->
+<!-- plate ('05nov2006','2006-11-05','drawings',[thumbnail('05nov2006.jpg'),'05nov2006.jpg'],[]) -->
+<!-- plate ('11jun2006','2006-06-11','drawings',[thumbnail('11jun2006.jpg'),'11jun2006.jpg'],[]) -->
+<!-- plate ('03jun2006','2006-06-03','drawings',[thumbnail('03jun2006.jpg'),'03jun2006.jpg'],[]) -->
+<!-- plate ('apr2006','2006-04-01','drawings',[thumbnail('apr2006.jpg'),'apr2006.jpg'],[]) -->
+<!-- plate ('22mar2006','2006-03-22','drawings',[thumbnail('22mar2006.jpg'),'22mar2006.jpg'],[]) -->
+<!-- plate ('17mar2006','2006-03-17','drawings',[thumbnail('17mar2006.jpg'),'17mar2006.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pencil on paper</div>
+      <div>21 x 28 cm (approx)</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('13nov2006','2006-11-13','drawings',[thumbnail('13nov2006.jpg'),'13nov2006.jpg'],[]) -->
+<!-- plate ('21aug2006a','2006-08-21','drawings',[thumbnail('21aug2006a.jpg'),'21aug2006a.jpg'],[]) -->
+<!-- plate ('21aug2006b','2006-08-21','drawings',[thumbnail('21aug2006b.jpg'),'21aug2006b.jpg'],[]) -->
+<!-- plate ('10jul2006','2006-07-10','drawings',[thumbnail('10jul2006.jpg'),'10jul2006.jpg'],[]) -->
+<!-- plate ('19dec2005','2005-12-19','drawings',[thumbnail('19dec2005.jpg'),'19dec2005.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pencil on paper</div>
+      <div>21 x 28 cm (approx)</div>
+      <div style="margin:25px 0 0 25px;">drawn from life</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('16may2007','2007-05-16','drawings',[thumbnail('16may2007.jpg'),'16may2007.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pen on paper</div>
+      <div>21 x 28 cm (approx)</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('masha-and-the-bear','2007-09-07','drawings',[display('masha-and-the-bear.jpg'),thumbnail('masha-and-the-bear.jpg'),'masha-and-the-bear.jpg'],[]) -->
+<!-- plate ('no-bottle','2005-06-02','drawings',[thumbnail('no-bottle.jpg'),'no-bottle.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pencil on paper</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('pierrot','2006-09-01','drawings',[thumbnail('pierrot.jpg'),'pierrot.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pencil on paper</div>
+      <div>4 x 5.5 cm</div>
+    </td>
+  </tr>
+</table>

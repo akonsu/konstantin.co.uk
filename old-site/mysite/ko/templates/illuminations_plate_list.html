@@ -1,0 +1,49 @@
+{% extends 'plate_list.html' %}
+
+{% comment %} -*-html-*- Time-stamp: <illuminations_plate_list.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+
+{% block content %}
+  {% load customtags %}
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="padding-right:25px;" valign="top">
+        <div class="nobr" style="padding-bottom:25px;">
+          <div style="font-size:150%;font-weight:bold;padding-bottom:10px;">{{tag.name}}</div>
+          <div style="margin:15px 0 0 15px;">
+            <div>nov-dec 2007</div>
+            <div>acrylic color over the pages of an appointment book</div>
+            <div>13.7 x 21.7 cm</div>
+          </div>
+        </div>
+        <div class="nobr">
+          {% for plate in object_list %}
+            {% ifequal plate.id selected.id %}
+              {% with plate.get_thumbnail as t %}
+                {% if t %}
+                  <a href="{% url ko.views.view_plate_list tag.name %}">
+                    <img alt="" src="{{t.content.url}}" style="margin:2px;" width="{{t.width}}px" height="{{t.height}}px" /></a>
+                {% else %}
+                  <span>[<a href="{% url ko.views.view_plate plate.name %}">{{plate.name}}</a>]</span>
+                {% endif %}
+              {% endwith %}
+            {% else %}
+              {% with plate.get_thumbnail as t %}
+                {% if t %}
+                  <a href="{% url ko.views.view_selected_plate tag.name,plate.name %}">
+                    <img alt="" src="{{t.content.url}}" style="margin:2px;" width="{{t.width}}px" height="{{t.height}}px" /></a>
+                {% else %}
+                  <span>[<a href="{% url ko.views.view_plate plate.name %}">{{plate.name}}</a>]</span>
+                {% endif %}
+              {% endwith %}
+            {% endifequal %}
+            {% if not forloop.last and forloop.counter|divisibleby:"5" %}<br />{% endif %}
+          {% endfor %}
+        </div>
+      </td>
+      {% if selected %}
+        <td valign="top">{% plate selected %}</td>
+      {% endif %}
+    </tr>
+  </table>
+{% endblock %}

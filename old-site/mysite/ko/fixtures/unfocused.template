@@ -1,0 +1,86 @@
+<!-- -*-html-*- Time-stamp: <unfocused.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('unfocused0209','2009-02-01','',[display('unfocused0209.jpg'),thumbnail('unfocused0209.jpg'),'unfocused0209.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>oil on canvas</div>
+      <div>46 x 61 cm</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('unfocused090308','2009-03-08','',[display('unfocused090308.jpg'),thumbnail('unfocused090308.jpg'),'unfocused090308.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pen and marker on paper</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('unfocused081216','2008-12-16','',[display('unfocused081216.jpg'),thumbnail('unfocused081216.jpg'),'unfocused081216.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pen on paper. digitally retouched.</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('unfocused080816','2008-08-16','',[display('unfocused080816.jpg'),thumbnail('unfocused080816.jpg'),'unfocused080816.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>pencil and crayon on paper. digitally retouched.</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('unfocused081215','2008-12-15','',[display('unfocused081215.jpg'),thumbnail('unfocused081215.jpg'),'unfocused081215.jpg'],[]) -->
+<!-- plate ('unfocused081213','2008-12-13','',[display('unfocused081213.jpg'),thumbnail('unfocused081213.jpg'),'unfocused081213.jpg'],[]) -->
+<!-- plate ('unfocused080719','2008-07-19','',[display('unfocused080719.jpg'),thumbnail('unfocused080719.jpg'),'unfocused080719.jpg'],[]) -->
+<!-- plate ('unfocused080717','2008-07-17','',[display('unfocused080717.jpg'),thumbnail('unfocused080717.jpg'),'unfocused080717.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>crayon on paper. digitally retouched.</div>
+    </td>
+  </tr>
+</table>

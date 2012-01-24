@@ -1,0 +1,184 @@
+<!-- -*-html-*- Time-stamp: <photos.template - root> -->
+<!-- copyright (c) konstantin.co.uk. all rights reserved. -->
+
+<!-- plate ('080509','2008-05-09','photos',[thumbnail('080509.jpg'),'080509.jpg'],[]) -->
+<!-- plate ('080510','2008-05-10','photos',[thumbnail('080510.jpg'),'080510.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>tennessee usa</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('0805250','2008-05-25','photos',[thumbnail('0805250.jpg'),'0805250.jpg'],[]) -->
+<!-- plate ('0805251','2008-05-25','photos',[thumbnail('0805251.jpg'),'0805251.jpg'],[]) -->
+<!-- plate ('0806290','2008-06-29','photos',[thumbnail('0806290.jpg'),'0806290.jpg'],[]) -->
+<!-- plate ('0806291','2008-06-29','photos',[thumbnail('0806291.jpg'),'0806291.jpg'],[]) -->
+<!-- plate ('0806292','2008-06-29','photos',[thumbnail('0806292.jpg'),'0806292.jpg'],[]) -->
+<!-- plate ('0806293','2008-06-29','photos',[thumbnail('0806293.jpg'),'0806293.jpg'],[]) -->
+<!-- plate ('0807140','2008-07-14','photos',[thumbnail('0807140.jpg'),'0807140.jpg'],[]) -->
+<!-- plate ('0807141','2008-07-14','photos',[thumbnail('0807141.jpg'),'0807141.jpg'],[]) -->
+<!-- plate ('04022008','2008-02-04','photos',[thumbnail('04022008.jpg'),'04022008.jpg'],[]) -->
+<!-- plate ('08122007','2007-12-08','photos',[thumbnail('08122007.jpg'),'08122007.jpg'],[]) -->
+<!-- plate ('080526','2008-05-26','photos',[thumbnail('080526.jpg'),'080526.jpg'],[]) -->
+<!-- plate ('ducks','2007-12-08','photos',[thumbnail('ducks.jpg'),'ducks.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>ohio usa</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('20070507','2007-05-07','photos',[thumbnail('20070507.jpg'),'20070507.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>lansing michigan usa</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('09jun2007','2007-06-09','photos',[thumbnail('09jun2007.jpg'),'09jun2007.jpg'],[]) -->
+<!-- plate ('10jun2007a','2007-06-10','photos',[thumbnail('10jun2007a.jpg'),'10jun2007a.jpg'],[]) -->
+<!-- plate ('10jun2007b','2007-06-10','photos',[thumbnail('10jun2007b.jpg'),'10jun2007b.jpg'],[]) -->
+<!-- plate ('12apr2007','2007-04-12','photos',[thumbnail('12apr2007.jpg'),'12apr2007.jpg'],[]) -->
+<!-- plate ('20070518','2007-05-18','photos',[thumbnail('20070518.jpg'),'20070518.jpg'],[]) -->
+<!-- plate ('200705220','2007-05-22','photos',[thumbnail('200705220.jpg'),'200705220.jpg'],[]) -->
+<!-- plate ('200705221','2007-05-22','photos',[thumbnail('200705221.jpg'),'200705221.jpg'],[]) -->
+<!-- plate ('200705230','2007-05-23','photos',[thumbnail('200705230.jpg'),'200705230.jpg'],[]) -->
+<!-- plate ('200705231','2007-05-23','photos',[thumbnail('200705231.jpg'),'200705231.jpg'],[]) -->
+<!-- plate ('20070606','2007-06-06','photos',[thumbnail('20070606.jpg'),'20070606.jpg'],[]) -->
+<!-- plate ('200706120','2007-06-12','photos',[thumbnail('200706120.jpg'),'200706120.jpg'],[]) -->
+<!-- plate ('200706121','2007-06-12','photos',[thumbnail('200706121.jpg'),'200706121.jpg'],[]) -->
+<!-- plate ('26apr2007','2007-04-26','photos',[thumbnail('26apr2007.jpg'),'26apr2007.jpg'],[]) -->
+<!-- plate ('state-of-vegetation','2006-12-01','photos',[thumbnail('state-of-vegetation.jpg'),'state-of-vegetation.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>east lansing michigan usa</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('04032008','2008-03-04','photos',[thumbnail('04032008.jpg'),'04032008.jpg'],[]) -->
+<!-- plate ('06032008','2008-03-06','photos',[thumbnail('06032008.jpg'),'06032008.jpg'],[]) -->
+<!-- plate ('07dec2007','2007-12-07','photos',[thumbnail('07dec2007.jpg'),'07dec2007.jpg'],[]) -->
+<!-- plate ('090320080','2008-03-09','photos',[thumbnail('090320080.jpg'),'090320080.jpg'],[]) -->
+<!-- plate ('090320081','2008-03-09','photos',[thumbnail('090320081.jpg'),'090320081.jpg'],[]) -->
+<!-- plate ('140320080','2008-03-14','photos',[thumbnail('140320080.jpg'),'140320080.jpg'],[]) -->
+<!-- plate ('140320081','2008-03-14','photos',[thumbnail('140320081.jpg'),'140320081.jpg'],[]) -->
+<!-- plate ('141120070','2007-11-14','photos',[thumbnail('141120070.jpg'),'141120070.jpg'],[]) -->
+<!-- plate ('141120071','2007-11-14','photos',[thumbnail('141120071.jpg'),'141120071.jpg'],[]) -->
+<!-- plate ('150220080','2008-02-15','photos',[thumbnail('150220080.jpg'),'150220080.jpg'],[]) -->
+<!-- plate ('150220081','2008-02-15','photos',[thumbnail('150220081.jpg'),'150220081.jpg'],[]) -->
+<!-- plate ('210220080','2008-02-21','photos',[thumbnail('210220080.jpg'),'210220080.jpg'],[]) -->
+<!-- plate ('210220081','2008-02-21','photos',[thumbnail('210220081.jpg'),'210220081.jpg'],[]) -->
+<!-- plate ('210220082','2008-02-21','photos',[thumbnail('210220082.jpg'),'210220082.jpg'],[]) -->
+<!-- plate ('210220083','2008-02-21','photos',[thumbnail('210220083.jpg'),'210220083.jpg'],[]) -->
+<!-- plate ('21dec2007','2007-12-21','photos',[thumbnail('21dec2007.jpg'),'21dec2007.jpg'],[]) -->
+<!-- plate ('260220080','2008-02-26','photos',[thumbnail('260220080.jpg'),'260220080.jpg'],[]) -->
+<!-- plate ('260220081','2008-02-26','photos',[thumbnail('260220081.jpg'),'260220081.jpg'],[]) -->
+<!-- plate ('260220082','2008-02-26','photos',[thumbnail('260220082.jpg'),'260220082.jpg'],[]) -->
+<!-- plate ('260220083','2008-02-26','photos',[thumbnail('260220083.jpg'),'260220083.jpg'],[]) -->
+<!-- plate ('280220080','2008-02-28','photos',[thumbnail('280220080.jpg'),'280220080.jpg'],[]) -->
+<!-- plate ('280220081','2008-02-28','photos',[thumbnail('280220081.jpg'),'280220081.jpg'],[]) -->
+<!-- plate ('080416','2008-04-16','photos',[thumbnail('080416.jpg'),'080416.jpg'],[]) -->
+<!-- plate ('080521','2008-05-21','photos',[thumbnail('080521.jpg'),'080521.jpg'],[]) -->
+<!-- plate ('080528','2008-05-28','photos',[thumbnail('080528.jpg'),'080528.jpg'],[]) -->
+<!-- plate ('080606','2008-06-06','photos',[thumbnail('080606.jpg'),'080606.jpg'],[]) -->
+<!-- plate ('080615','2008-06-15','photos',[thumbnail('080615.jpg'),'080615.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>bowling green ohio usa</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('british-petroleum','2007-03-22','photos',[thumbnail('british-petroleum.jpg'),'british-petroleum.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>dec 2006</div>
+      <div>kentucky usa</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('komposition080714','2008-07-14','photos',[thumbnail('komposition080714.jpg'),'komposition080714.jpg'],[]) -->
+<!-- plate ('komposition19112007','2007-11-19','photos',[thumbnail('komposition19112007.jpg'),'komposition19112007.jpg'],[]) -->
+<!-- plate ('komposition150220080','2008-02-15','photos',[thumbnail('komposition150220080.jpg'),'komposition150220080.jpg'],[]) -->
+<!-- plate ('komposition150220081','2008-02-15','photos',[thumbnail('komposition150220081.jpg'),'komposition150220081.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+      <div>digital collage</div>
+    </td>
+  </tr>
+</table>
+
+<!-- plate ('20070430','2007-04-30','photos',[thumbnail('20070430.jpg'),'20070430.jpg'],[]) -->
+<!-- plate ('wheel','2007-02-01','photos',[thumbnail('wheel.jpg'),'wheel.jpg'],[]) -->
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      {% with self.content_parts.0 as p %}
+        <img alt="{{self.name}}" src="{{p.content.url}}" width="{{p.width}}px" height="{{p.height}}px" />
+      {% endwith %}
+    </td>
+    <td class="nobr" style="padding-left:50px;" valign="top">
+      <div class="plate-title">{{self.name}}</div>
+      <div>{{self.date}}</div>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% comment %} -*-html-*- Time-stamp: <plate_list.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+
+{% block menu %}
+  <a href="{% url ko.views.index %}">home</a>
+{% endblock %}
+{% block content %}
+  {% load customtags %}
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="nobr" style="padding:25px;" valign="top">tag = {{tag.name}}</td>
+      <td class="nobr" valign="top">
+        {% for plate in object_list %}
+          {% with plate.get_thumbnail as t %}
+              {% if t %}
+                <a href="{% url ko.views.view_plate plate.name %}">
+                  <img alt="{{plate.name}}" src="{{t.content.url}}" style="padding:2px;" width="{{t.width}}px" height="{{t.height}}px" /></a>
+              {% else %}
+                <span>[<a href="{% url ko.views.view_plate plate.name %}">{{plate.name}}</a>]</span>
+              {% endif %}
+          {% endwith %}
+          {% if not forloop.last and forloop.counter|divisibleby:"6" %}<br />{% endif %}
+        {% endfor %}
+        <div class="nowrap">{% pages %}</div>
+      </td>
+    </tr>
+  </table>
+{% endblock %}

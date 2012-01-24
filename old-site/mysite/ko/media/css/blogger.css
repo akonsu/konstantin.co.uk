@@ -1,0 +1,37 @@
+/* -*-css-*- Time-stamp: <blogger.css - root> */
+/* copyright (c) konstantin.co.uk. all rights reserved. */
+
+.flickr-entry
+{
+}
+.flickr-entry .image-container
+{
+    float: left;
+}
+.flickr-entry .description-container
+{
+    float: right;
+    margin-left: 30px;
+}
+.flickr-entry .description-container div
+{
+    margin-bottom: 10px;
+}
+.flickr-entry .description-container .title
+{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.flickr-entry .description-container .post-description
+{
+    margin-left: 30px;
+}
+.flickr-entry .description-container .uploader
+{
+    background-image: url("http://static.konstantin.co.uk/icons/flickr-22x22.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 22px;
+    padding-left: 25px;
+}

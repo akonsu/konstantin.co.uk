@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% comment %} -*-sgml-*- Time-stamp: <plate.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+
+{% block menu %}
+  <a href="{% url ko.views.index %}">home</a>
+{% endblock %}
+{% block content %}
+  {% load customtags %}
+  {% load tagging_tags %}
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="top" width="200px">
+        {% tags_for_object plate as tags %}
+        {% if tags %}
+          <table class="brackets">
+            {% for tag in tags %}
+              <tr>
+                <td align="right">{% if forloop.first %}tags = [{% else %}&nbsp;{% endif %}</td>
+                <td align="left">
+                  <a href="{% url ko.views.view_plate_list tag.name %}">{{tag.name}}</a>,
+                </td>
+              </tr>
+              {% if forloop.last %}
+                <tr>
+                  <td align="right">]</td>
+                  <td>&nbsp;</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </table>
+        {% endif %}
+        {% if plate.parents %}
+          <table class="brackets">
+            {% for p in plate.parents.all %}
+              <tr>
+                <td align="right">{% if forloop.first %}from = [{% else %}&nbsp;{% endif %}</td>
+                <td align="left"><a href="{% url ko.views.view_plate p.name %}">{{p.name}}</a>,</td>
+              </tr>
+              {% if forloop.last %}
+                <tr>
+                  <td align="right">]</td>
+                  <td>&nbsp;</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </table>
+        {% endif %}
+      </td>
+      <td valign="top">{% plate plate %}</td>
+    </tr>
+  </table>
+{% endblock %}

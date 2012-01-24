@@ -1,0 +1,82 @@
+# -*-python-*- Time-stamp: <settings.py.default - root>
+
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+
+ADMIN_PASSWORD = ''
+
+ADMINS = (
+    # ('Your Name', 'your_email@domain.com'),
+    )
+
+ALLOWED_INCLUDE_ROOTS = ()
+
+MANAGERS = ADMINS
+
+DATABASES = {
+    "default" : {
+        'ENGINE' : '',
+        'HOST' : '',
+        'NAME': '',
+        'PASSWORD' : '',
+        'PORT' : '',
+        'USER' : '',
+    },
+}
+
+EMAIL_HOST = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = ''
+EMAIL_PORT = 25
+EMAIL_SUBJECT_PREFIX = ''
+EMAIL_USE_TLS = False
+SERVER_EMAIL = ''
+
+# Local time zone for this installation. All choices can be found here:
+# http://www.postgresql.org/docs/current/static/datetime-keywords.html#DATETIME-TIMEZONE-SET-TABLE
+TIME_ZONE = 'America/New_York'
+
+# Language code for this installation. All choices can be found here:
+# http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+# http://blogs.law.harvard.edu/tech/stories/storyReader$15
+LANGUAGE_CODE = 'en-us'
+
+SITE_ID = 1
+
+USE_I18N = True
+USE_L10N = True
+
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+STATIC_URL = ''
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = ''
+
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.doc.XViewMiddleware',
+    )
+
+ROOT_URLCONF = 'urls'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'ko.context_processors.media_url',
+    )
+
+TEMPLATE_DIRS = (
+    # Put strings here, like "/home/html/django_templates".
+    # Always use forward slashes, even on Windows.
+    )
+
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'ko',
+    )

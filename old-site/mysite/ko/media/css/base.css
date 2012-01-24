@@ -1,0 +1,61 @@
+/* -*-css-*- Time-stamp: <base.css - root> */
+/* copyright (c) konstantin.co.uk. all rights reserved. */
+
+a
+{
+    color:black;
+}
+body
+{
+    font-family:courier new, courier, mono;
+    font-size:12px;
+    margin:0px;
+    padding:10px;
+}
+img
+{
+    border-width:0px;
+    vertical-align:bottom;
+}
+.content
+{
+    padding:50px 0 50px 0;
+}
+.footer
+{
+    border-top:1px solid #b6b6b6;
+    padding-top:5px;
+    white-space:nowrap;
+}
+.logo
+{
+    font-size:150%;
+    font-weight:bold;
+}
+.menu
+{
+    font-size:125%;
+    padding-bottom:5px;
+}
+.menu a
+{
+    margin-right:20px;
+}
+.nobr
+{
+    white-space:nowrap;
+}
+.pages *
+{
+    padding:0 2px 0 2px;
+}
+.pages span
+{
+    font-size:150%;
+    font-weight:bold;
+}
+.plate-title
+{
+    font-size:150%;
+    font-weight:bold;
+}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% comment %} -*-html-*- Time-stamp: <index.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+
+{% load tagging_tags %}
+{% block content %}
+  <div style="width:1100px;overflow:hidden;">
+    <div style="float:left;overflow:hidden;padding-right:25px;width:130px;">
+      <div class="nobr" style="float:left;padding-right:5px;text-align:right;width:15px;">[</div>
+      <div style="float:left;width:100px;">
+        <ul class="nobr" style="list-style-type:none;margin:0;padding:0;">
+          <li><a href="{% url admin:index %}">admin</a>,</li>
+          <li>
+            <span style="margin-right:5px;">
+              <a href="{% url blog-feed %}">
+                <img alt="feed" src="{{media_url}}icons/feed-icon-14x14.png" style="vertical-align:middle;" width="14px" height="14px" /></a>
+            </span>
+            <a href="{% url blog-feed %}">feed</a>,
+          </li>
+        </ul>
+      </div>
+      <div style="clear:both;padding-right:5px;text-align:right;width:15px;">]</div>
+    </div>
+    <div style="float:left;overflow:hidden;padding-right:25px;width:500px;">
+      {% for plate in object_list %}
+        <div class="plate-title" style="border-bottom:1px solid #b6b6b6;margin-bottom:20px;">{{plate.datetime_display}}</div>
+        <div style="margin-bottom:50px;">{% plate plate %}</div>
+      {% endfor %}
+      <div class="nowrap">{% pages %}</div>
+    </div>
+    {% tags_for_model ko.Plate as tags with counts %}
+    {% if tags %}
+      <div style="float:left;overflow:hidden;padding-right:25px;width:200px;">
+        <div class="nobr" style="float:left;padding-right:5px;text-align:right;width:60px;">tags = [</div>
+        <div style="float:left;width:130px;">
+          <ul class="nobr" style="list-style-type:none;margin:0;padding:0;">
+            {% for tag in tags %}
+              <li><a href="{% url ko.views.view_plate_list tag.name %}">{{tag.name}}</a>({{tag.count}}),</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div style="clear:both;padding-right:5px;text-align:right;width:60px;">]</div>
+      </div>
+    {% endif %}
+    <div style="float:left;overflow:hidden;width:150px;">
+<!-- Start of Flickr Badge -->
+<style type="text/css">
+#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+#flickr_icon_td {padding:0 5px 0 0 !important;}
+.flickr_badge_image {text-align:center !important;}
+.flickr_badge_image img {border: 1px solid black !important;}
+#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+#flickr_badge_wrapper {border: solid 1px #b6b6b6}
+#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+</style>
+<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><a href="http://www.flickr.com/photos/ykonsu/" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper"><script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=5&display=latest&size=t&layout=v&source=user&user=37858292%40N04"></script></table>
+</td></tr></table>
+<!-- End of Flickr Badge -->
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+{% endblock %}

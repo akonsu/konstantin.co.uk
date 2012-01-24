@@ -1,0 +1,55 @@
+{% comment %} -*-sgml-*- Time-stamp: <base.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+
+{% spaceless %}
+  <?xml version="1.0" encoding="utf-8"?>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml1" xml:lang="en" lang="en">
+    <head>
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+      <meta http-equiv="Content-Language" content="en-us" />
+      <meta name="verify-v1" content="zBPhdipbN1FBmcaW9bA4llqiv19vJk3fm7t7k6Wfnmg=" />
+
+      <title>{% block head-title %}konstantin.co.uk{% endblock %}</title>
+
+      <meta name="ROBOTS" content="ALL" />
+      <meta http-equiv="imagetoolbar" content="no" />
+      <meta name="MSSmartTagsPreventParsing" content="true" />
+      <meta name="Copyright" content="copyright konstantin.co.uk" />
+
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+
+      {% block head-extra %}
+        <link href="{{media_url}}css/base.css" rel="stylesheet" type="text/css" media="screen" />
+      {% endblock %}
+    </head>
+    <body>
+      <div style="border-bottom:1px solid #b6b6b6;min-width:1100px;">
+        <img alt="" src="{{media_url}}icons/ko.jpg" style="height:150px;width:150px;" />
+        <div style="position:relative;">
+          <div class="logo nobr" style="bottom:0;position:absolute;right:0;">root[at]konstantin[dot]co[dot]uk</div>
+        </div>
+      </div>
+      <div class="menu nobr">
+        {% block menu %}{% endblock %}
+        {% if user.is_authenticated %}<a href="{% url django.contrib.auth.views.logout %}">logout</a>{% endif %}
+      </div>
+      <div class="content">{% block content %}{% endblock %}</div>
+      <div class="footer">copyright <span style="font-family:arial,sans-serif;">&copy;</span> konstantin.co.uk. all rights reserved.</div>
+
+      <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+
+      <script type="text/javascript">
+          try {
+              var pageTracker = _gat._getTracker("UA-9811055-1");
+              pageTracker._trackPageview();
+          } catch(err) {}
+      </script>
+
+    </body>
+  </html>
+{% endspaceless %}
